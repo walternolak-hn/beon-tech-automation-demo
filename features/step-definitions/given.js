@@ -8,4 +8,6 @@ const pages = {
 
 Given(/^I am on the (\w+) page$/, async (page) => {
     await pages[page].open()
+    let languageSelector = $('=English');
+    await languageSelector.click();
 });

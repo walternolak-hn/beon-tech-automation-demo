@@ -14,7 +14,7 @@ Then(/^I should see (\w+) results$/, async (searchResult) => {
 // open the search result page
 Then(/^I should see the WebdriverIO page$/, async () => {
     await expect(WebdriverIOPage.titleWebdriverIO).toBeExisting();
-    await expect(WebdriverIOPage.titleWebdriverIO).toHaveText(expect.stringContaining('Marco de prueba'));
+    await expect(WebdriverIOPage.titleWebdriverIO).toHaveText(expect.stringContaining('browser and mobile automation'));
     await expect(driver).toHaveUrl(expect.stringContaining('webdriver.io'));
     await driver.pause(1000)
 });
